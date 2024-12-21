@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+  let b=[];
+function myFunction() {
+  let arrayTableGifts = prompt("Enter any gifts array");
+  
+    if (arrayTableGifts != null) 
+	{
+      let startTable = prompt("Enter The table you want to start from");
+	   if (startTable != null) 
+	   {
+     let endTable = prompt("Enter The table you want to stop at");
+	     if (endTable != null) 
+		 {
+         startTable= [3];
+         endTable= [7];
+    b= arrayTableGifts.slice(startTable,endTable);
+
+
+
+function onlyDistinct(value, index, self) {
+  return self.indexOf(value) === index;
+}
+
+
+let steps = uniqueArray(b);
+
+
+function uniqueArray(arr) {
+ let a = [];
+
+  for (let i=0, l=arr.length; i<l; i++)
+      if (a.indexOf(arr[i]) === -1 && arr[i] !== '')
+      {
+        let tableNumber = startingTable;
+       
+          a.push(arr[i]);
+          tableNumber = tableNumber+i;
+       
+ document.getElementById("Results").innerHTML ="Table Number "+tableNumber+ " With "+arr[i];
+      }
+  return a;
+
+
+}
+         }
+      }
+    }
+
+
+
+
+
+}
+</script>
+
+</body>
+</html>
